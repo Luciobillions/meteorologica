@@ -46,7 +46,7 @@ public class MedicionesTemperaturas
      * Muestra todas las temperaturas registradas en 
      * la pantalla. 
      */
-    public vid imprimirTemperaturas() {
+    public void imprimirTemperaturas() {
         System.out.println(dia + "/" + mes);
         int pos = 0;
         for (Integer temperatura: registros) {
@@ -54,6 +54,16 @@ public class MedicionesTemperaturas
             System.out.println(temperatura + "C");
             pos = pos + 1;
         }
+    }
+    
+    public int cantTemperaturasExtremas(){
+    int cantidad = 0;
+    for (int temperatura: registros ){
+        if(temperatura >  35 || temperatura < -15 ){
+             cantidad++;
+        }
+    }
+    return cantidad ;
     }
     //chadrossi
     
