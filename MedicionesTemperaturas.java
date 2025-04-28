@@ -46,7 +46,7 @@ public class MedicionesTemperaturas
      * Muestra todas las temperaturas registradas en 
      * la pantalla. 
      */
-    public void imprimirTemperaturas() {
+    public vid imprimirTemperaturas() {
         System.out.println(dia + "/" + mes);
         int pos = 0;
         for (Integer temperatura: registros) {
@@ -56,5 +56,6 @@ public class MedicionesTemperaturas
         }
     }
     //chadrossi
+    
     
 }
